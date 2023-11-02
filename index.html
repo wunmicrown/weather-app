@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="root-body">
+      <div id="left-sidebar">
+        <p class="fw-bold  text-center mt-5">Weather Details</p>
+        <div class="weatherDetails container">
+          <div class="list">
+          <div id="location" class="location">
+            <div class="local">
+              <div class="loca">
+                Location
+              </div>
+              <p id="name"></p>
+            </div>
+            <div class="local">
+              <div class="loca">
+                Description
+              </div>
+              <p id="description"></p>
+            </div>
+            <div class="local">
+              <div class="loca">
+                Humidity
+              </div>
+              <p id="humidity"></p>
+            </div>
+            <div class="local">
+              <div class="loca">
+                Wind
+              </div>
+              <p id="wind"></p>
+            </div>
+
+          </div>
+        </div>
+          <div class="container section-divider"></div>
+          <div id="afterDivider" class="afterDivider">
+            <div class="local">
+              <div class="loca">
+                Temperature
+              </div>
+              <p id="temp"></p>
+            </div>
+            <div class="local">
+              <div class="loca">
+                Min
+              </div>
+              <p id="temp-min"></p>
+            </div>
+            <div class="local">
+              <div class="loca">
+                Max
+              </div>
+              <p id="temp-max"></p>
+            </div>
+            <div class="local">
+              <div class="loca">
+                Feels
+              </div>
+              <p id="feels_like"></p>
+            </div>
+            <div class="local">
+              <div class="loca">
+                Pressure
+              </div>
+              <p id="pressure"></p>
+            </div>
+          </div>
+        </div>
+        <div class="fixed-bottom pb-3 container-fluid">
+          <div class="text-end mx-auto col-11 col">
+            <p class="small">
+              "Designed by"
+              <a href="https://www.linkedin.com/in/pamilerin-olayiwola-1b5005288/">Pamilerin</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="root">
+        <form id="weatherForm">
+          <div id="app">
+            <input type="text" placeholder="Search location" id="info" />
+          </div>
+        </form>
+        <div id="show"></div>
+      </div>
+    </div>
+        <script>
+     // icon.innerHTML = `<img src="${result.weather[0].icon}" alt="">`;
+        // cityName.innerHTML = result.name;
+        // temp.innerHTML = `<h1>${result.main.temp}<span>&#8451</span></h1>`;
+        // desc.innerHTML = result.weather[0].description;
+       
+        // humidity.innerHTML = result.main.humidity;
+        // wind.innerHTML = result.wind.speed;
+        // uv.innerHTML = result.main.humidity;
+        // pressure.innerHTML = result.main.pressure;
+        // visibility.innerHTML = result.visibility;
+        // cloud.innerHTML = result.clouds.all;
+        // rain.innerHTML = result.main.humidity;
+        // <div class="weatherDetails">
+        //     <h2>${date}</h2>
+        //     <h2>${result.wind.speed}</h2>
+        //     <h2>${result.sys.country}</h2>
+        //   </div>
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
