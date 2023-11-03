@@ -4,7 +4,6 @@
   font-family: Oxygen, sans-serif;
   margin: 0;
   padding: 0;
-  /* overflow: all; */
 }
 input {
   background-color: initial;
@@ -99,7 +98,7 @@ font-weight: 900;
   
   input {
     background-color: initial;
-    border-bottom: 2px solid #ffff !important;
+    border-bottom: 4px solid #ffff !important;
     border: none;
     outline: none;
     width: 100%;
@@ -135,5 +134,9 @@ font-weight: 900;
   position:fixed;
 
 } 
+input::placeholder {
+  color: white;
+  font-style: italic;
+}
 }
 
