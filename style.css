@@ -4,7 +4,7 @@
   font-family: Oxygen, sans-serif;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: all; */
 }
 input {
   background-color: initial;
@@ -20,19 +20,26 @@ input::placeholder {
   color: #ffff;
   font-style: italic;
 }
-#root-body {
+
+.positionrel{
+  position: relative;
+  bottom: 800px !important;
+}
+body {
   background-image: url(waether41.jpg);
-  /* background-color: #fec49c; */
-  background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: auto;
   background-position: center;
-  /* background-blend-mode: multiply; */
 }
 .otherItem {
   margin-top: 200px;
   width: 50%;
   padding-left: 55px;
+}
+#date{
+  width: 50%;
+  padding-left: 55px;
+  font-size: 20px;
 }
 img{
   padding-left: 50px;
@@ -48,13 +55,14 @@ img{
     margin-top: 0;
 
 }
+
 #left-sidebar {
   float: right;
-  width: 35%; 
-  height: 100vh;
-  padding: 10px; 
-  border: 1px solid #ccc;
-  background-color: rgb(84,88,87);
+  width: 35%;
+  height: auto;
+  padding: 10px;
+ 
+  background-color: rgba(84, 88, 87, 0.6); 
 }
 .section-divider {
   border-top: 1px solid #ffff;
@@ -72,6 +80,8 @@ font-weight: 900;
   justify-content: space-around;
 }
 
+
+
 .weatherDetails {
   padding-top: 100px;
   height: 100vh;
@@ -83,4 +93,47 @@ font-weight: 900;
   text-decoration: none;
   color: white;
   font-size: 12px;
+
 }
+@media (max-width: 768px) {
+  
+  input {
+    background-color: initial;
+    border-bottom: 2px solid #ffff !important;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 30px;
+  }
+  #root-body{
+    height: auto;
+  }
+  .otherItem {
+    margin-top: 90px;
+    width: 100%;
+    padding-left: 55px;
+  }
+  img{
+    padding-left: 100px;
+  }
+  #date{
+    padding-left: 55px;
+    font-size: 15px;
+  }
+  #left-sidebar {
+    float: right;
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    padding: 10px;
+    background-color: rgba(84, 88, 87, 0.7); 
+  }
+.fixed-bottom{
+  position:fixed;
+
+} 
+}
+

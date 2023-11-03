@@ -2,11 +2,14 @@ document.getElementById("weatherForm").addEventListener("submit", function (even
   event.preventDefault();
   const info = document.getElementById("info");
   const show = document.getElementById("show");
-
   const fetchInfo = () => {
     let newDate = new Date();
     let month = newDate.getMonth() + 1;
     let day = newDate.getDate();
+    let hour = newDate.getHours();
+    let minute = newDate.getMinutes();
+    let second = newDate.getSeconds();
+    let time = hour + ":" + minute + ":" + second;
     let year = newDate.getFullYear();
     let date = month + "/" + day + "/" + year;
     let apiKey = "ecc186d41c49de2167179a38ba4c12c7";
@@ -23,14 +26,15 @@ document.getElementById("weatherForm").addEventListener("submit", function (even
             <small>${result.weather[0].description}
               <img src="https://openweathermap.org/img/wn/${result.weather[0].icon}.png" alt="image">
             </small>
+            <h2>${date}</h2>
+            <h2>${time}</h2>
           </div>
         `
-        document.getElementById("name").innerHTML = result.name;
+        nam.innerHTML = `${result.name} , ${result.sys.country}`;
         document.getElementById("description").innerHTML = result.weather[0].description;
         document.getElementById("humidity").innerHTML = result.main.humidity + "%";
         document.getElementById("wind").innerHTML = result.wind.speed + "m/s";
-        document.getElementById("temp").innerHTML = result.main.
-          temp
+        document.getElementById("temp").innerHTML = result.main.temp
           + "°C";
         ;
         document.getElementById("temp-min").innerHTML = result.main.
