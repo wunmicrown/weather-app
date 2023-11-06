@@ -20,14 +20,10 @@ input::placeholder {
   font-style: italic;
 }
 
-.positionrel{
-  position: relative;
-  bottom: 800px !important;
-}
 body {
   background-image: url(waether41.jpg);
   background-repeat: no-repeat;
-  height: auto;
+  height: 50vh !important;
   background-position: center;
 }
 .otherItem {
@@ -60,7 +56,6 @@ img{
   width: 35%;
   height: auto;
   padding: 10px;
- 
   background-color: rgba(84, 88, 87, 0.6); 
 }
 .section-divider {
@@ -83,7 +78,7 @@ font-weight: 900;
 
 .weatherDetails {
   padding-top: 100px;
-  height: 100vh;
+  /* height: 100vh; */
 }
 #afterDivider {
   margin-top: 100px !important;
@@ -94,6 +89,15 @@ font-weight: 900;
   font-size: 12px;
 
 }
+.Designed{
+  position:fixed;
+
+}
+.Designed, a{
+  text-decoration: none;
+  color: #fff;
+ 
+ } 
 @media (max-width: 768px) {
   
   input {
@@ -122,21 +126,36 @@ font-weight: 900;
     padding-left: 55px;
     font-size: 15px;
   }
+  .otherItem .deg {
+    font-size: 3em;
+}
   #left-sidebar {
-    float: right;
     width: 100%;
     height: auto;
-    margin-top: 60px;
     padding: 10px;
     background-color: rgba(84, 88, 87, 0.7); 
   }
-.fixed-bottom{
+.Designed a{
   position:fixed;
+
+} 
+.Designed, a{
+ text-decoration: none;
+ color: #fff;
 
 } 
 input::placeholder {
   color: white;
   font-style: italic;
 }
+#afterDivider {
+  margin-top: 20px !important;
 }
+.otherItem {
+  margin-top: 50px;
+}
+
+}
+
+
 

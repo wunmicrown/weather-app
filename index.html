@@ -11,9 +11,13 @@
   </head>
   <body>
     <div id="root-body">
+      <marquee behavior="" direction="right">
+        <h3 style="margin-top: 20px; color: #374246; font-size: 40px; font-weight: 800;">Weather View</h3>
+      </marquee>
       <div id="root">
         <form id="weatherForm">
           <div id="app" class="px-2">
+            <div id="erro"></div>
             <input type="text" placeholder="Search location" id="info" />
           </div>
         </form>
@@ -83,11 +87,7 @@
               </div>
               <p id="pressure"></p>
             </div>
-          </div>
-        </div>
-        <div class="fixed-bottom pb-3 container-fluid">
-          <div class="text-end mx-auto col-11 col">
-            <p class="small">
+            <p class="small text-end">
               "Designed by"
               <a href="https://www.linkedin.com/in/pamilerin-olayiwola-1b5005288/">Pamilerin</a>
             </p>
